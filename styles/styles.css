@@ -1,0 +1,323 @@
+* h1, h2, p {
+  text-align: center;
+}
+
+/* Custom properties: uitzoeken hoe het werkt en ik het kan implementeren (deeltaak)
+- kleur thema (dark modus)
+- h1/h2 etc styling
+- box shadow?
+
+:root {
+  --color: rgb(49, 39, 113);
+}
+
+body {
+  color: var(--main-color);
+}*/
+
+
+/* ================ STYLING BODY ================ */
+body{
+padding:1rem 2rem 0 2rem;
+color: rgb(49, 39, 113);
+}
+
+/* ================ STYLING HEADER ================ */
+header {
+  display: flex;
+  justify-content:space-around;
+}
+
+header a img{
+  width: 300px; /*ff naar kijken*/
+  max-width:100%;
+  height: auto;
+}
+
+/* breakpoint toevoegen hamboergoer menoe mobile versie?*/
+
+.main-navigation-menu ul {
+  display: flex;
+  justify-content:space-between;
+  list-style-type: none;
+}
+
+.main-navigation-menu li {
+  display: flex;
+  margin-right: 20px;
+}
+
+
+/* -> underline menu item weg + huisstijl styling toevoegen!
+
+.main-navigation-menu ul li a {
+ a:link{}
+ a:visited{}
+ a:hover{}
+ a:active{} 
+} */
+
+
+/* ================ STYLING MAIN  ================*/
+.main-header{
+padding: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+/* ================ STYLING CAROUSEL "TIPS BUURTBEWONERS" ================ */ 
+.box-buurtbewoners {
+  padding: 10px;
+}
+
+
+.carousel-tips-buurtbewoners {
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  overflow: scroll;
+  }
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-inline-start: 0;  
+  width: 60rem; 
+}
+
+.slides-item {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "tip-foto-buurtbewoner";
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1rem;   
+  padding: 15px;
+  text-align: left;
+}
+
+.slides-item p, .slides-item img{
+  grid-area: tip-foto-buurtbewoner;
+}
+
+.slides-item p{
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  place-self: start center;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.slides-item img{
+  border-radius: 10px;
+  max-width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/* ================ STYLING "VISIT OBA" ================*/ 
+.box-visit-oba {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.box-visit-oba h2{
+text-decoration: underline;
+text-align: center;
+}
+
+.box-visit-oba button {
+  border-radius: 10px;
+  background-color: rgb(78, 113, 65, 0.8);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-style: none;
+  text-align: center;
+  transition-duration: 0.4s;
+  margin: 0.5rem;
+}
+
+.workshop-1 .workshop-2 {
+margin: 1rem 1rem 1rem 1rem;
+padding: 0.5rem 1.5rem;
+
+}
+
+.box-visit-oba button p{
+  color:aliceblue;
+}
+
+
+
+
+/* ================ STYLING "VIND JOUW PLANT" ================ */ 
+ .box-vind-jouw-plant {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 10px;
+  }
+
+ .box-vind-jouw-plant button {
+  border-radius: 10px;
+  color: rgb(49, 39, 113);
+  background-color:rgb(255, 255, 255, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-style: none;
+  padding: 5px 10px;
+  text-align: center;
+  transition-duration: 0.4s;
+ }
+
+.box-vind-jouw-plant button:hover {
+  background-color: rgb(49, 39, 113); 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+
+
+/* ================ FOOTER STYLING ================*/
+
+
+footer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  width: 1200px;
+} 
+
+.footer-middle {
+  background-color:rgb(49, 39, 113);
+  color: white;
+  padding: 25px 25px 25px 25px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  display: flex;
+}
+
+
+.footer-bottom {
+ display: flex; 
+ justify-content: center;
+ padding: 25px 25px 25px 25px;
+ 
+}
+
+/* voor mobiel deze onder socials footer-bottom*/
+.newsletter-form {
+  max-width:fit-content;
+  overflow:hidden;
+}
+
+.newsletter-form h2 {
+  text-align: left;
+}
+
+@media screen and (max-width: 300px) {
+  .footer-middle {
+    display: flex;
+    flex-direction:column;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer-middle {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .newsletter-form {
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 876px) {
+  .newsletter-form {
+    padding-left: 20rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer-top img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
+
+/* ============ MEDIA QUERIES ================*/
+
+/* MEDIA QUERIES - BREAKPOINTS CAROUSEL */
+
+@media screen and (min-width: 375px) {
+  .carousel-tips-buurtbewoners {
+    background-color: rgb(78, 113, 65, 0.8) /*tijdelijke kleur to check*/
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .carousel-tips-buurtbewoners {
+    background-color: rgb(78, 113, 65, 0.6);/*tijdelijke kleur to check*/
+  }
+}
+
+/* MEDIA QUERIES - BREAKPOINTS BUTTONS */
+
+@media screen and (min-width: 400px) {
+  .box-vind-jouw-plant button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .box-vind-jouw-plant button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .box-vind-jouw-plant button {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 200px;
+  }
+}
+
+/* breakpoint maken voor buttons visit oba: 
+dat ze naast de tekst komen bij meer ruimte + meer tekst in button*/
+
