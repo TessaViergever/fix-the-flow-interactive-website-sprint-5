@@ -1,10 +1,21 @@
-let button = document.querySelector ('#search-button') //selects the button element//
-let popupSearch = document.querySelector ('.pop-up-search')
+//Stap 1: JS koppelen aan CSS/HTML //
 
-button.addEventListener ('click', showSearch) //event = actie die verandering activeert//
+let SearchButton = document.querySelector ('#search-button') //(SELECT)//
+let PopUpSearch = document.querySelector ('.pop-up-search')
+let PopUpBlurryBackground = document.querySelector ('.pop-up-blurry-background')
 
+
+//Stap 2: event selecteren (IF this...) //
+SearchButton.addEventListener ('click', showSearch) //(EVENT)//
+
+
+//Stap 3: functie toewijzen (...THEN that) //
 function showSearch() {
-    popupSearch.classList.toggle('display-pop-up-search') //function: de verandering (verwijst JS -> instructie CSS //
+    PopUpSearch.classList.toggle('display-pop-up-search') //(FUNCTION)//
 }
 
+
+function showSearch() {
+    PopUpSearch.classList.toggle('.display-blurry-background') 
+}
 
