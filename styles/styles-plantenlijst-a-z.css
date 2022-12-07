@@ -1,14 +1,14 @@
 /* BODY STYLING */
-body{
+/*body{
 width: 100%;
 padding:1rem 2rem 0 2rem;
-/*background-color: rgba(35, 178, 47, 0.5);*/
+/*background-color: rgba(35, 178, 47, 0.5);
 color: rgb(49, 39, 113);
-}
+*/
 
 
 /* HEADER STYLING */
-header {
+/*header {
   display: grid;
   grid-template-columns: 2fr ;
   grid-template-rows: 1fr ;
@@ -22,7 +22,7 @@ header>img{
   place-self: left;
   padding-left:5rem;
   grid-area: logo-buurtcampus-plantswap;
-}
+}*/
 
 /*
 .header-nav{
@@ -35,12 +35,12 @@ header>img{
 */
 
 /* MAIN STYLING */
-main {
+/*main {
 background-color: rgba(35, 178, 47, 0.5);
 border:rgba(35, 178, 47, 0.5);
-}
+}*/
 
-.main-header{
+/*.main-header{
 background-color: rgb(255, 255, 255); 
 background-color: rgba(35, 178, 47, 0.214);
 text-align: center;
@@ -57,7 +57,7 @@ h1{
 h2{
   text-align: center;
   background-color: rgb(255, 255, 255); 
-  }
+  }*/
 
   /* PLANTENLIJST A TM Z STYLING */
 

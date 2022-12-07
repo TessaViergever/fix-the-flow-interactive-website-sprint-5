@@ -1,0 +1,198 @@
+ /* ================ STYLING BODY ================ */
+ body{
+    padding:1rem 2rem 0 2rem;
+    color: rgb(49, 39, 113);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* ================ STYLING HEADINGS ================ */
+
+h1 {
+  font-size: 2rem;
+}
+
+
+/* ================ STYLING HEADER ================ */
+header {
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  header a img{
+    width: 300px; /*ff naar kijken*/
+    max-width:100%;
+    height: auto;
+  }
+  
+  /* breakpoint toevoegen hamboergoer menoe mobile versie?*/
+  
+  .main-navigation-menu ul {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+  }
+  
+  .main-navigation-menu li {
+    display: flex;
+    margin-right: 20px;
+  }
+    
+   /* -> underline menu item weg + huisstijl styling toevoegen!
+  
+  .main-navigation-menu ul li a {
+   a:link{}
+   a:visited{}
+   a:hover{}
+   a:active{} 
+  } */
+  
+  
+  /* ================ STYLING MAIN  ================*/
+  .main-header{
+    padding: 10px;
+    }
+    
+  
+
+/* PLANTENLIJST A TM Z STYLING */
+
+.plantenlijst-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4em;
+  }
+  
+  .plantenlijst-items{
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  .plantenlijst-item{
+    display: inline-block;
+    max-width: 50%;
+    box-sizing: border-box;
+    row-gap: 2px;
+  
+  }
+  .plantenlijst-items img{
+    max-width: 75%;
+    border-radius: 5%;
+  }
+  
+  
+  @media screen and (min-width: 500px) {
+    .plantenlijst-item {
+     /* display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: top;
+      margin-right:6rem;
+      margin-left:6rem;
+      max-width: 400px;*/
+  
+      display: inline-block;
+      max-width: 33%;
+      box-sizing: border-box;
+    }
+  }
+  
+  
+  
+  @media screen and (min-width: 750px) {
+    .plantenlijst-item {
+      display: inline-block;
+      max-width: 25%;
+      box-sizing: border-box;
+    /*flex: 1 0 21%; 
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100px;
+    background-color: rgb(49, 39, 113, 0.6);*/
+    }
+  }
+  
+
+
+
+
+
+
+
+    /* ================ FOOTER STYLING ================*/
+  
+  
+  footer img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    width: 1200px;
+  } 
+  
+  .footer-middle {
+    background-color:rgb(49, 39, 113);
+    color: white;
+    padding: 25px 25px 25px 25px;
+  }
+  
+  .footer-middle ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  
+  .footer-bottom {
+   display: flex; 
+   justify-content: center;
+   padding: 25px 25px 25px 25px;
+   
+  }
+  
+  /* voor mobiel deze onder socials footer-bottom*/
+  .newsletter-form {
+    max-width:fit-content;
+    overflow:hidden;
+  }
+  
+  .newsletter-form h2 {
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 300px) {
+    .footer-middle {
+      display: flex;
+      flex-direction:column;
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    .footer-middle {
+      display: flex;
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    .newsletter-form {
+      padding-left: 10rem;
+    }
+  }
+  
+  @media screen and (min-width: 876px) {
+    .newsletter-form {
+      padding-left: 20rem;
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    .footer-top img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  }
