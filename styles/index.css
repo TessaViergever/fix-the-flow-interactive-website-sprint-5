@@ -194,8 +194,8 @@
 
  /* POP UP SEARCH FIELD */
 
+
  .pop-up-search{
-  display:none;
   background-color:antiquewhite;
   padding: 2em;
   border-radius: 10px;
@@ -207,8 +207,7 @@
  } 
  
 
-.pop-up-blurry-background {
-    display: none;   
+.pop-up-blurry-background { 
     position: fixed;
     top: 0;
     left: 0;
@@ -219,12 +218,11 @@
     backdrop-filter: blur(5px);
 }
 
-.display-blurry-background { 
+.container-search-pop-up{
+  display:none; 
+ }
+.display-search-container {
   display: block;
-}
-
-.display-pop-up-search {
-  display: block; 
 }
 
 
