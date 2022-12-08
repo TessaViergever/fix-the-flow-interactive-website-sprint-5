@@ -22,9 +22,4 @@ function close() {
 }
 
 
-// function showSearch() {
-//     BlurryBackground.classList.toggle('display-search-container')
-// }
-
-
 

@@ -225,6 +225,21 @@
   display: block;
 }
 
+.pop-up-search label {
+  display: flex;
+  color:antiquewhite;
+  background-color:rgb(49, 39, 113); 
+  border-radius: 5px;
+  border-color: rgb(49, 39, 113);
+  padding: 1em 0 1em 3em;
+}
+
+.pop-up-search input {
+  margin-top: 1em;
+}
+
+
+
 
 
  /* ================ FOOTER STYLING ================*/
