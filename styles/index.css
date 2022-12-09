@@ -194,7 +194,7 @@
 
  /* POP UP SEARCH FIELD */
 
-
+ 
  .pop-up-search{
   background-color:antiquewhite;
   padding: 2em;
@@ -231,15 +231,38 @@
   background-color:rgb(49, 39, 113); 
   border-radius: 5px;
   border-color: rgb(49, 39, 113);
-  padding: 1em 0 1em 3em;
+  padding: 1em 0 1em 4em;
+  margin-left: 1em;
 }
 
 .pop-up-search input {
   margin-top: 1em;
+  margin-left: 3em;
 }
 
+.pop-up-search button {
+  margin-top: 1em;
+  margin-left: 2em;
+}
 
+ /* DIALOG VENSTER PROBEERSEL*/
 
+ /* dialog {
+   display: none;
+   background-color: antiquewhite;
+   border-radius: 5px;
+   border-color: rgb(49, 39, 113);
+ }
+
+ ::backdrop {
+   background-color: rgb(78, 113, 65, 0.8);
+   backdrop-filter: blur 5px;
+ }
+
+ .dialog-active {
+  display: block;
+ }
+ */
 
 
  /* ================ FOOTER STYLING ================*/
@@ -331,8 +354,8 @@
  @media screen and (min-width: 625px) {
    .carousel-tips-buurtbewoners {
      background-color: rgb(78, 113, 65, 0.6);
+   }
  }
-}
 
  /* MEDIA QUERIES - BREAKPOINTS BUTTONS */
 

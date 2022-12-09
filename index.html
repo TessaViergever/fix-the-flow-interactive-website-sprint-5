@@ -139,6 +139,8 @@
             </div>
 
 
+            <!-- POP UP SCREEN HACK: WERKT -->
+
             <div class="container-search-pop-up">
                 <div class="pop-up-blurry-background"></div>
 
@@ -148,8 +150,8 @@
                     <input list="plantensoorten-az" id="planten-opties" name="planten-opties" placeholder="Bijv. Bananenplant">
 
                     <datalist id="plantensoorten-az">
-                        <option value="Aloë Vera">
-                        <option value="Bananenplant">
+                        <option value="Aloë Vera" href="./aloe-vera-verzorg-info.html">
+                        <option value="Bananenplant" href="./bananenplant-verzorg-info.html">
                         <option value="Bromelia">
                         <option value="Bonsai">
                         <option value="Cactus">
@@ -178,19 +180,56 @@
                         <option value="Zebrina">
                         <option value="Zamioculcas">
                     </datalist>
-
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
+                    <button id="datalist-search-button">Breng me naar plantinfo pagina!</button>
+                    <button id="cancel-search-button">Zoektocht annuleren</button>
+                
+            <!-- DIALOG VENSTER PROBEERSEL : werkt nog niet?-->
+<!-- 
+            <dialog class="search-dialog">
+                <form method="dialog">
+                    <p>
+                        <label>Kies jouw plant:
+                            <select>
+                                <option value="default">Kies jouw plant</option>
+                                <option value="Aloë Vera">
+                                <option value="Bananenplant"></option>
+                                <option value="Bromelia"></option>
+                                <option value="Bonsai"></option>
+                                <option value="Cactus"></option>
+                                <option value="Calathea"></option>
+                                <option value="Dieffenbachia"></option>
+                                <option value="Epipremnum"></option>
+                                <option value="Ficus"></option>
+                                <option value="Graslelie"></option>
+                                <option value="Hedera"></option>
+                                <option value="Hortensia"></option>
+                                <option value="Kalanchoë"></option>
+                                <option value="Lepelplant"></option>
+                                <option value="Monstera"></option>
+                                <option value="Orchidee"></option>
+                                <option value="Philodendron"></option>
+                                <option value="Pannenkoekenplant"></option>
+                                <option value="Rhipsalis"></option>
+                                <option value="Sanseveria"></option>
+                                <option value="Schefflera"></option>
+                                <option value="Tabaksplant"></option>
+                                <option value="Tradescandia"></option>
+                                <option value="Varen"></option>
+                                <option value="Vetplant"></option>
+                                <option value="Vleesetendeplant"></option>
+                                <option value="Yucca"></option>
+                                <option value="Zebrina"></option>
+                                <option value="Zamioculcas"></option>
+                            </select>
+                        </label>
+                    </p>
+                    <div>
+                        <button value="cancel-button">Annuleer</button>
+                        <button id="confirm-button" value="default">Zoeken!</button>
+                    </div>
+                </form>
+            </dialog>
+            <p> -->
 
 
     </main>
