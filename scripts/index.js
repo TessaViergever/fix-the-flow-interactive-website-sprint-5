@@ -18,15 +18,3 @@ function close() {
     ContainerSearchPopUp.classList.toggle ('display-search-container') //closes when click on blurrybackground//
 }
 
-// --------   DIALOG WINDOW OPEN/CLOSE  ------------ //
-
-// let SearchButton = document.querySelector('#search-button')
-// let Dialog = document.querySelector('.search-dialog')
-// // let Backdrop = document.querySelector
-
-// SearchButton.addEventListener('click', showSearch)
-
-// function showSearch() {
-//     Dialog.classList.toggle('.dialog-active')
-// }
-

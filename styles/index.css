@@ -1,29 +1,41 @@
- /* Custom properties: uitzoeken hoe het werkt en ik het kan implementeren (deeltaak)
+ /* Custom properties: uitzoeken hoe het werkt en ik het kan implementeren (deeltaak sprint 4)
   - kleur thema (dark modus)
   - h1/h2 etc styling
-  - box shadow?
+  - box shadow?*/
   
+  /* ================ ROOT/CUSTOM PROPERTIES ================ */
   :root {
-    --color: rgb(49, 39, 113);
+    --color-white: white;
+    --color-blue: rgb(49, 39, 113);
+    --color-green:rgb(78, 113, 65);
+    
+    --body: var(--color-white);
+    --heading: var(--color-white);
+    --bg: var(--color-white);
+    --button-text: var(--color-blue);
+    --button-bg: var(--color-white);
+    --button-text-hover: var(--color-white);
+    --button-bg-hover: var(--color-blue);
+    
+    --border-radius: 10px;
+
+    --box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   }
   
-  body {
-    color: var(--main-color);
-  }*/
-
 
  /* ================ STYLING BODY ================ */
  body {
    padding: 1rem 2rem 0 2rem;
-   color: rgb(49, 39, 113);
+   color: var(--color-blue);
    font-family: Arial, Helvetica, sans-serif;
  }
 
  /* ================ STYLING HEADINGS ================ */
-
-
  h1 {
    font-size: 2rem;
+   color: var(--color-white);
+   text-shadow: var(--box-shadow); 
  }
 
  /* ================ STYLING HEADER ================ */
@@ -34,13 +46,11 @@
 
  header a img {
    width: 300px;
-   /*ff naar kijken*/
    max-width: 100%;
    height: auto;
  }
 
  /* breakpoint toevoegen hamboergoer menoe mobile versie?*/
-
  .main-navigation-menu ul {
    display: flex;
    justify-content: space-between;
@@ -52,22 +62,19 @@
    margin-right: 20px;
  }
 
-
- /* -> underline menu item weg + huisstijl styling toevoegen!
-  
-  .main-navigation-menu ul li a {
-   a:link{}
-   a:visited{}
-   a:hover{}
-   a:active{} 
-  } */
-
-
  /* ================ STYLING MAIN  ================*/
  .main-header {
    padding: 10px;
+   padding:1em;
+   background-color: rgb(78, 113, 65, 0.8);
+   border-color: var(--color-green);
+   border-radius: 5px;
+   box-shadow: var(--box-shadow);
  }
 
+ .main-header q {
+  text-align: center;
+ }
 
 
 
@@ -85,6 +92,7 @@
    margin-bottom: 10px;
    max-width: 100%;
    overflow: scroll;
+   box-shadow: var(--box-shadow);
  }
 
  .slides {
@@ -101,7 +109,7 @@
    grid-template-columns: 1fr;
    grid-template-areas:
      "tip-foto-buurtbewoner";
-   border-radius: 10px;
+   border-radius: var(--border-radius);
    margin: 10px;
    font-size: 1rem;
    padding: 15px;
@@ -117,40 +125,71 @@
    background-color: rgba(255, 255, 255, 0.6);
    overflow: hidden;
    place-self: start center;
-   border-radius: 10px;
+   border-radius: var(--border-radius);
    padding: 5%;
+   
+  }
+  
+  .slides-item img {
+    border-radius: var(--border-radius);
+    max-width: 100%;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* ================ STYLING "VIND JOUW PLANT" ================ */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2em;
+  }
+ 
+  .box-vind-jouw-plant button {
+   border-radius: var(--border-radius);
+    color: var(--color-blue);
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: var(--box-shadow);
+    border-style: none;
+    padding: 5px 10px;
+    transition-duration: 0.4s;
+    width: 40%;
+    min-width: 200px;
+  }
+ 
+  .box-vind-jouw-plant button:hover {
+    background-color: var(--color-blue);
+    box-shadow: var(--box-shadow);
+    color: var(--color-white);
+  }
+  
+  
+  /* ================ STYLING "VISIT OBA" ================*/
+  .box-visit-oba {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2em;
  }
-
- .slides-item img {
-   border-radius: 10px;
-   max-width: 100%;
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
-
-
-
- /* ================ STYLING "VISIT OBA" ================*/
- .box-visit-oba {
-   display: flex;
-   flex-direction: column;
-   padding: 10px;
- }
+ 
 
  .box-visit-oba h2 {
-   text-decoration: underline;
-   text-align: center;
+   text-align: left;
  }
 
  .box-visit-oba button {
    display: inline-block;
-   border-radius: 10px;
+   border-radius: var(--border-radius);
    background-color: rgb(78, 113, 65, 0.8);
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   box-shadow: var(--box-shadow);
    border-style: none;
    text-align: center;
    transition-duration: 0.4s;
-   margin: 0.5rem;
+   margin-left: 3rem;
+   
  }
+
 
  .workshop-1 .workshop-2 {
    margin: 1rem 1rem 1rem 1rem;
@@ -159,110 +198,71 @@
  }
 
  .box-visit-oba button p {
-   color: aliceblue;
+   color: var(--color-white);
  }
 
 
-
-
- /* ================ STYLING "VIND JOUW PLANT" ================ */
- .button-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 1rem;
-   padding-bottom: 4em;
- }
-
- .box-vind-jouw-plant button {
-   border-radius: 10px;
-   color: rgb(49, 39, 113);
-   background-color: rgb(255, 255, 255, 0.5);
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   border-style: none;
-   padding: 5px 10px;
-   transition-duration: 0.4s;
-   width: 40%;
-   min-width: 200px;
- }
-
- .box-vind-jouw-plant button:hover {
-   background-color: rgb(49, 39, 113);
-   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-   color: white;
- }
 
  /* POP UP SEARCH FIELD */
-
- 
- .pop-up-search{
-  background-color:antiquewhite;
-  padding: 2em;
-  border-radius: 10px;
-  position: fixed;
-  z-index: 2;
-  width: 50vw;
-  top: 50vw;
-  left: 15%; 
- } 
- 
-
-.pop-up-blurry-background { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.185);
-    backdrop-filter: blur(5px);
-}
-
-.container-search-pop-up{
-  display:none; 
+ .pop-up-search {
+   background-color: var(--color-white);
+   padding: 2em;
+   border-radius: var(--border-radius);
+   position: fixed;
+   z-index: 2;
+   width: 50vw;
+   top: 50vw;
+   left: 15%;
  }
-.display-search-container {
-  display: block;
-}
 
-.pop-up-search label {
-  display: flex;
-  color:antiquewhite;
-  background-color:rgb(49, 39, 113); 
-  border-radius: 5px;
-  border-color: rgb(49, 39, 113);
-  padding: 1em 0 1em 4em;
-  margin-left: 1em;
-}
+ .button-close {
+   background-color: transparent;
+   cursor: pointer;
+   font-size: 1em;
+   padding-left:3em;
+   padding-right: 3em;
 
-.pop-up-search input {
-  margin-top: 1em;
-  margin-left: 3em;
-}
+   border: 0;
+   border-radius: 50%;
+   /* position: absolute, top, right; */
+   /* right: 0em; */
+ }
 
-.pop-up-search button {
-  margin-top: 1em;
-  margin-left: 2em;
-}
 
- /* DIALOG VENSTER PROBEERSEL*/
+ .pop-up-blurry-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(12, 40, 17, 0.5);
+   backdrop-filter: blur(5px);
+ }
 
- /* dialog {
+ .container-search-pop-up {
    display: none;
-   background-color: antiquewhite;
+ }
+
+ .display-search-container {
+   display: block;
+ }
+
+ .pop-up-search label {
+   display: flex;
    border-radius: 5px;
-   border-color: rgb(49, 39, 113);
+   padding: 1em 0 1em 1em;
+   margin-left: 1em;
  }
 
- ::backdrop {
-   background-color: rgb(78, 113, 65, 0.8);
-   backdrop-filter: blur 5px;
+ .pop-up-search input {
+   margin-left: 1em;
  }
 
- .dialog-active {
-  display: block;
+ .pop-up-search button {
+   margin-top: 1em;
+   margin-left: 2em;
  }
- */
 
 
  /* ================ FOOTER STYLING ================*/
@@ -278,8 +278,8 @@
  }
 
  .footer-middle {
-   background-color: rgb(49, 39, 113);
-   color: white;
+   background-color: var(--color-blue);
+   color: var(--color-white);
    padding: 25px 25px 25px 25px;
  }
 

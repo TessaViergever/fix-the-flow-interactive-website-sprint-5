@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Project stekjesbieb (Buurtcampus Oost)</title>
@@ -24,36 +24,35 @@
             </ul>
         </nav>
     </header>
-
-
+    
+    
     <main>
-
+        
         <div class="main-header">
             <h1>Hoe verzorg ik mijn plant?</h1>
-            <h2> Informatie over hoe je jouw planten kunt verzorgen</h2>
-            <p>En ze leefden nog lang en gelukkig..!🪴✨</p>
+            <q>En ze leefden nog lang & gelukkig!</q>
         </div>
-
+        
         <!-- ======== CAROUSEL "TIPS VAN BUURTBEWONERS" ======== -->
         <section class="box-buurtbewoners">
-            <h2>Planten verzorgtips van buurtbewoners</h2>
+            <h2>Verzorgtips van buurtbewoners</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id pariatur porro architecto.
                 Porro neque reiciendis sit a vitae repellat inventore ab, est voluptate provident excepturi
                 dignissimos quis alias sint.</p>
 
-            <div class="carousel-tips-buurtbewoners">
-                <ul class="slides">
+                <div class="carousel-tips-buurtbewoners">
+                    <ul class="slides">
                     <li class="slides-item slide-1" id="slide-1">
                         <img id="buurtbewoner-foto-1" alt="buurtbewoner Riet geeft plant water"
                             src="./assets/afbeeldingen-rechtenvrij/buurtbewoner-riet-plant-water.jpeg">
                         <p>“In de winter sproei ik mijn bananenplant 2x per week” - Riet, 65</p>
                         <a href=""></a>
                     </li>
-
+                    
                     <li class="slides-item slide-2" id="slide-2">
                         <img alt="buurtbewoner Leyla mat haar plant in handen"
                             src="./assets/afbeeldingen-rechtenvrij/buurtbewoner-leyla-plant.webp">
-                        <p>“Mijn cactus wil graag veel zonlicht maar weinig water” - Leyla, 22</p>
+                            <p>“Mijn cactus wil graag veel zonlicht maar weinig water” - Leyla, 22</p>
                         <a href=""></a>
                     </li>
 
@@ -62,7 +61,7 @@
                         <p>“Mijn Aloë Vera houd niet van een laag water onder in de pot” - Rafi, 24</p>
                         <a href=""></a>
                     </li>
-
+                    
                     <li class="slides-item slide-4" id="slide-4">
                         <img alt="" src="./assets/afbeeldingen-rechtenvrij/buurtbewoner-johan-plant-verpotten.jpeg">
                         <p>“Een raam op het noorden wordt mijn monstera super blij van” - Johan, 31</p>
@@ -71,82 +70,66 @@
                 </ul>
             </div>
         </section>
-
-
-
+        
+        <!-- ======== BOX "VIND JOUW PLANT" ========-->
+        <div class="box-vind-jouw-plant">
+        
+            <h2>Vind jouw plant</h2>
+        
+            <div class="button-container">
+        
+                <button type="button">
+                    <a href="plantenlijst-az.html">
+                        <p>Plantenlijst A t/m Z</p>
+                    </a>
+                </button>
+        
+                <button id="search-button" type="button">
+                    <p>Zoek op naam 🔍</p>
+                </button>
+            </div>
+        
+        
         <!-- ======== BOX "VISIT OBA" ========-->
         <div class="box-visit-oba">
-
+            
             <h2> Kom langs bij ObA!</h2>
-
+            
             <div class="workshop-1">
-                <p>➳ wissel planten verzorgingstips uit met buurtgenoten (di & do 12:00-14:00)</p>
+                <p>Wissel planten verzorgingstips uit met buurtgenoten (di & do 12:00-14:00)</p>
                 <button class="aanmelden-workshop-1" type="button">
                     <a href="">
-                        <p>ben ik 🐝!</p>
+                        <p>Ben ik 🐝</p>
                     </a>
                 </button>
             </div>
 
             <div class="workshop-2">
-                <p>➳ volg een workshop plantenverzorging(vrijdag 18 oktober 2022 16:00-17:00)</p>
-                <button class="aanmelden-workshop-2" type="button" >
+                <p>Volg een workshop plantenverzorging(vrijdag 18 oktober 2022 16:00-17:00)</p>
+                <button class="aanmelden-workshop-2" type="button">
                     <a href="">
-                        <p>ben ik 🐝!</p>
+                        <p>Ben ik 🐝</p>
                     </a>
                 </button>
             </div>
 
-            <a href="">
-                <p>Ben je er nog niet over uit of je mee wil doen? Hier vind je meer informatie over de workshops</p>
+            <a href="" title="link naar pagina over workshops">
+                <p>Meer info over onze workshops</p>
             </a>
         </div>
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- ======== BOX "VIND JOUW PLANT" ========-->
-        <div class="box-vind-jouw-plant">
-
-            <h2>Vind jouw plant</h2>
-
-            <div class="button-container">
-
-                <button type="button">
-                    <a href="plantenlijst-az.html">
-                        <p>plantenlijst A t/m Z</p>
-                    </a>
-                </button>
-
-                <button id="search-button" type="button">
-                    <p>zoek op naam 🔍</p>
-                </button>
-            </div>
-
-
-            <!-- POP UP SCREEN HACK: WERKT -->
+            <!-- POP UP SEARCH SCREEN -->
 
             <div class="container-search-pop-up">
                 <div class="pop-up-blurry-background"></div>
 
                 <div class="pop-up-search">
-                    <h2>Voor welke plant ben je op zoek naar verzorg informatie?</h2>
+                    <h2>Voor welke plant ben je op zoek naar verzorg info?</h2>
                     <label for="planten-opties">Kies jouw plant:</label>
-                    <input list="plantensoorten-az" id="planten-opties" name="planten-opties" placeholder="Bijv. Bananenplant">
+                    <input list="plantensoorten-az" id="planten-opties" name="planten-opties"
+                        placeholder="Bijv. Bananenplant">
 
                     <datalist id="plantensoorten-az">
                         <option value="Aloë Vera" href="./aloe-vera-verzorg-info.html">
@@ -179,57 +162,8 @@
                         <option value="Zebrina">
                         <option value="Zamioculcas">
                     </datalist>
-                    <button id="datalist-search-button">Breng me naar plantinfo pagina!</button>
-                    <button id="cancel-search-button">Zoektocht annuleren</button>
+                    <button class="button-close">&times;</button>
                 </div>
-                
-            <!-- DIALOG VENSTER PROBEERSEL : werkt nog niet?-->
-<!-- 
-            <dialog class="search-dialog">
-                <form method="dialog">
-                    <p>
-                        <label>Kies jouw plant:
-                            <select>
-                                <option value="default">Kies jouw plant</option>
-                                <option value="Aloë Vera">
-                                <option value="Bananenplant"></option>
-                                <option value="Bromelia"></option>
-                                <option value="Bonsai"></option>
-                                <option value="Cactus"></option>
-                                <option value="Calathea"></option>
-                                <option value="Dieffenbachia"></option>
-                                <option value="Epipremnum"></option>
-                                <option value="Ficus"></option>
-                                <option value="Graslelie"></option>
-                                <option value="Hedera"></option>
-                                <option value="Hortensia"></option>
-                                <option value="Kalanchoë"></option>
-                                <option value="Lepelplant"></option>
-                                <option value="Monstera"></option>
-                                <option value="Orchidee"></option>
-                                <option value="Philodendron"></option>
-                                <option value="Pannenkoekenplant"></option>
-                                <option value="Rhipsalis"></option>
-                                <option value="Sanseveria"></option>
-                                <option value="Schefflera"></option>
-                                <option value="Tabaksplant"></option>
-                                <option value="Tradescandia"></option>
-                                <option value="Varen"></option>
-                                <option value="Vetplant"></option>
-                                <option value="Vleesetendeplant"></option>
-                                <option value="Yucca"></option>
-                                <option value="Zebrina"></option>
-                                <option value="Zamioculcas"></option>
-                            </select>
-                        </label>
-                    </p>
-                    <div>
-                        <button value="cancel-button">Annuleer</button>
-                        <button id="confirm-button" value="default">Zoeken!</button>
-                    </div>
-                </form>
-            </dialog>
-            <p> -->
 
 
     </main>
